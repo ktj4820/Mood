@@ -108,27 +108,3 @@ export default function Camera() {
         </div>
         )
     }
-/*
-export class WebcamStream extends React.Component {
-    constructor(props) {
-        super(props);
-        this.videoTag = React.createRef()
-    }
-
-    componentDidMount() {
-        // getting access to webcam
-       navigator.mediaDevices
-            .getUserMedia({video: true})
-            .then(stream => this.videoTag.current.srcObject = stream)
-            .catch(console.log);
-    }
-
-    render() {
-        return <video id={this.props.id}
-                      ref={this.videoTag}
-                      width={this.props.width}
-                      height={this.props.height}
-                      autoPlay
-                      title={this.props.title}></video>
-    }
-*/
